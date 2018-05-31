@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.0</version>
+    <date>2018-05-31T21:37:07Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>template_sslchecker</template>
+            <name>template_sslchecker</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>sslchecker</name>
+                </application>
+            </applications>
+            <items/>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>sslchecker</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>sslchecker[]</key>
+                    <delay>900</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>1</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>http code for {#DOMAIN}</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>sslchecker[{#DOMAIN},HTTPCODE]</key>
+                            <delay>900</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>sslchecker</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>HTTP response status code</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>ssl status for {#DOMAIN}</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <multiplier>0</multiplier>
+                            <snmp_oid/>
+                            <key>sslchecker[{#DOMAIN},STATUS]</key>
+                            <delay>1620</delay>
+                            <history>90</history>
+                            <trends>0</trends>
+                            <status>0</status>
+                            <value_type>4</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>sslchecker</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>ssl ttl for {#DOMAIN}</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <multiplier>1</multiplier>
+                            <snmp_oid/>
+                            <key>sslchecker[{#DOMAIN},TTL]</key>
+                            <delay>1800</delay>
+                            <history>90</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units>days</units>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>0.000011574074074074073</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>sslchecker</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <application_prototypes/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{template_sslchecker:sslchecker[{#DOMAIN},HTTPCODE].last()}&lt;200 or {template_sslchecker:sslchecker[{#DOMAIN},HTTPCODE].last()}&gt;401</expression>
+                            <name>Bad http code for {#DOMAIN}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <dependencies/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{template_sslchecker:sslchecker[{#DOMAIN},STATUS].regexp(&quot;(BAD)&quot;)}=1 or {template_sslchecker:sslchecker[{#DOMAIN},TTL].last()}=0</expression>
+                            <name>bad ssl certificate for {#DOMAIN}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <dependencies/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{template_sslchecker:sslchecker[{#DOMAIN},TTL].last()}&lt;7</expression>
+                            <name>low ttl for ssl certificate for {#DOMAIN}</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                            <dependencies>
+                                <dependency>
+                                    <name>bad ssl certificate for {#DOMAIN}</name>
+                                    <expression>{template_sslchecker:sslchecker[{#DOMAIN},STATUS].regexp(&quot;(BAD)&quot;)}=1 or {template_sslchecker:sslchecker[{#DOMAIN},TTL].last()}=0</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                </discovery_rule>
+            </discovery_rules>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <value_maps>
+        <value_map>
+            <name>HTTP response status code</name>
+            <mappings>
+                <mapping>
+                    <value>100</value>
+                    <newvalue>Continue</newvalue>
+                </mapping>
+                <mapping>
+                    <value>101</value>
+                    <newvalue>Switching Protocols</newvalue>
+                </mapping>
+                <mapping>
+                    <value>102</value>
+                    <newvalue>Processing</newvalue>
+                </mapping>
+                <mapping>
+                    <value>200</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>201</value>
+                    <newvalue>Created</newvalue>
+                </mapping>
+                <mapping>
+                    <value>202</value>
+                    <newvalue>Accepted</newvalue>
+                </mapping>
+                <mapping>
+                    <value>203</value>
+                    <newvalue>Non-Authoritative Information</newvalue>
+                </mapping>
+                <mapping>
+                    <value>204</value>
+                    <newvalue>No Content</newvalue>
+                </mapping>
+                <mapping>
+                    <value>205</value>
+                    <newvalue>Reset Content</newvalue>
+                </mapping>
+                <mapping>
+                    <value>206</value>
+                    <newvalue>Partial Content</newvalue>
+                </mapping>
+                <mapping>
+                    <value>207</value>
+                    <newvalue>Multi-Status</newvalue>
+                </mapping>
+                <mapping>
+                    <value>208</value>
+                    <newvalue>Already Reported</newvalue>
+                </mapping>
+                <mapping>
+                    <value>226</value>
+                    <newvalue>IM Used</newvalue>
+                </mapping>
+                <mapping>
+                    <value>300</value>
+                    <newvalue>Multiple Choices</newvalue>
+                </mapping>
+                <mapping>
+                    <value>301</value>
+                    <newvalue>Moved Permanently</newvalue>
+                </mapping>
+                <mapping>
+                    <value>302</value>
+                    <newvalue>Found</newvalue>
+                </mapping>
+                <mapping>
+                    <value>303</value>
+                    <newvalue>See Other</newvalue>
+                </mapping>
+                <mapping>
+                    <value>304</value>
+                    <newvalue>Not Modified</newvalue>
+                </mapping>
+                <mapping>
+                    <value>305</value>
+                    <newvalue>Use Proxy</newvalue>
+                </mapping>
+                <mapping>
+                    <value>306</value>
+                    <newvalue>Switch Proxy</newvalue>
+                </mapping>
+                <mapping>
+                    <value>307</value>
+                    <newvalue>Temporary Redirect</newvalue>
+                </mapping>
+                <mapping>
+                    <value>308</value>
+                    <newvalue>Permanent Redirect/Resume Incomplete</newvalue>
+                </mapping>
+                <mapping>
+                    <value>400</value>
+                    <newvalue>Bad Request</newvalue>
+                </mapping>
+                <mapping>
+                    <value>401</value>
+                    <newvalue>Unauthorized</newvalue>
+                </mapping>
+                <mapping>
+                    <value>402</value>
+                    <newvalue>Payment Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>403</value>
+                    <newvalue>Forbidden</newvalue>
+                </mapping>
+                <mapping>
+                    <value>404</value>
+                    <newvalue>Not Found</newvalue>
+                </mapping>
+                <mapping>
+                    <value>405</value>
+                    <newvalue>Method Not Allowed</newvalue>
+                </mapping>
+                <mapping>
+                    <value>406</value>
+                    <newvalue>Not Acceptable</newvalue>
+                </mapping>
+                <mapping>
+                    <value>407</value>
+                    <newvalue>Proxy Authentication Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>408</value>
+                    <newvalue>Request Timeout</newvalue>
+                </mapping>
+                <mapping>
+                    <value>409</value>
+                    <newvalue>Conflict</newvalue>
+                </mapping>
+                <mapping>
+                    <value>410</value>
+                    <newvalue>Gone</newvalue>
+                </mapping>
+                <mapping>
+                    <value>411</value>
+                    <newvalue>Length Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>412</value>
+                    <newvalue>Precondition Failed</newvalue>
+                </mapping>
+                <mapping>
+                    <value>413</value>
+                    <newvalue>Payload Too Large</newvalue>
+                </mapping>
+                <mapping>
+                    <value>414</value>
+                    <newvalue>Request-URI Too Long</newvalue>
+                </mapping>
+                <mapping>
+                    <value>415</value>
+                    <newvalue>Unsupported Media Type</newvalue>
+                </mapping>
+                <mapping>
+                    <value>416</value>
+                    <newvalue>Requested Range Not Satisfiable</newvalue>
+                </mapping>
+                <mapping>
+                    <value>417</value>
+                    <newvalue>Expectation Failed</newvalue>
+                </mapping>
+                <mapping>
+                    <value>418</value>
+                    <newvalue>I'm a Teapot</newvalue>
+                </mapping>
+                <mapping>
+                    <value>419</value>
+                    <newvalue>Authentication Timeout</newvalue>
+                </mapping>
+                <mapping>
+                    <value>420</value>
+                    <newvalue>Method Failure/Enhance Your Calm</newvalue>
+                </mapping>
+                <mapping>
+                    <value>421</value>
+                    <newvalue>Misdirected Request</newvalue>
+                </mapping>
+                <mapping>
+                    <value>422</value>
+                    <newvalue>Unprocessable Entity</newvalue>
+                </mapping>
+                <mapping>
+                    <value>423</value>
+                    <newvalue>Locked</newvalue>
+                </mapping>
+                <mapping>
+                    <value>424</value>
+                    <newvalue>Failed Dependency</newvalue>
+                </mapping>
+                <mapping>
+                    <value>426</value>
+                    <newvalue>Upgrade Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>428</value>
+                    <newvalue>Precondition Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>429</value>
+                    <newvalue>Too Many Requests</newvalue>
+                </mapping>
+                <mapping>
+                    <value>431</value>
+                    <newvalue>Request Header Fields Too Large</newvalue>
+                </mapping>
+                <mapping>
+                    <value>440</value>
+                    <newvalue>Login Timeout</newvalue>
+                </mapping>
+                <mapping>
+                    <value>444</value>
+                    <newvalue>No Response</newvalue>
+                </mapping>
+                <mapping>
+                    <value>449</value>
+                    <newvalue>Retry With</newvalue>
+                </mapping>
+                <mapping>
+                    <value>450</value>
+                    <newvalue>Blocked by Windows Parental Controls</newvalue>
+                </mapping>
+                <mapping>
+                    <value>451</value>
+                    <newvalue>Unavailable for Legal Reasons/Redirect</newvalue>
+                </mapping>
+                <mapping>
+                    <value>494</value>
+                    <newvalue>Request Header Too Large</newvalue>
+                </mapping>
+                <mapping>
+                    <value>495</value>
+                    <newvalue>Cert Error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>496</value>
+                    <newvalue>No Cert</newvalue>
+                </mapping>
+                <mapping>
+                    <value>497</value>
+                    <newvalue>HTTP to HTTPS</newvalue>
+                </mapping>
+                <mapping>
+                    <value>498</value>
+                    <newvalue>Token Expired/Invalid</newvalue>
+                </mapping>
+                <mapping>
+                    <value>499</value>
+                    <newvalue>Client Closed Request/Token Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>500</value>
+                    <newvalue>Internal Server Error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>501</value>
+                    <newvalue>Not Implemented</newvalue>
+                </mapping>
+                <mapping>
+                    <value>502</value>
+                    <newvalue>Bad Gateway</newvalue>
+                </mapping>
+                <mapping>
+                    <value>503</value>
+                    <newvalue>Service Unavailable</newvalue>
+                </mapping>
+                <mapping>
+                    <value>504</value>
+                    <newvalue>Gateway Timeout</newvalue>
+                </mapping>
+                <mapping>
+                    <value>505</value>
+                    <newvalue>HTTP Version Not Supported</newvalue>
+                </mapping>
+                <mapping>
+                    <value>506</value>
+                    <newvalue>Variant Also Negotiates</newvalue>
+                </mapping>
+                <mapping>
+                    <value>507</value>
+                    <newvalue>Insufficient Storage</newvalue>
+                </mapping>
+                <mapping>
+                    <value>508</value>
+                    <newvalue>Loop Detected</newvalue>
+                </mapping>
+                <mapping>
+                    <value>509</value>
+                    <newvalue>Bandwidth Limit Exceeded</newvalue>
+                </mapping>
+                <mapping>
+                    <value>510</value>
+                    <newvalue>Not Extended</newvalue>
+                </mapping>
+                <mapping>
+                    <value>511</value>
+                    <newvalue>Network Authentication Required</newvalue>
+                </mapping>
+                <mapping>
+                    <value>520</value>
+                    <newvalue>Unknown Error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>598</value>
+                    <newvalue>Network Read Timeout Error</newvalue>
+                </mapping>
+                <mapping>
+                    <value>599</value>
+                    <newvalue>Network Connect Timeout Error</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
